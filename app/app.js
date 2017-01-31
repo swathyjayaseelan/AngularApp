@@ -17,6 +17,10 @@ myNinjaApp.config(['$routeProvider', function($routeProvider, $locationProvider)
     templateUrl: 'views/contact-success.html',
     controller: 'ContactController'
   })
+  .when('/add',{
+    templateUrl: 'views/add.html',
+    controller: 'NinjaController'
+  })
 
   .when('/directory', {
     templateUrl: 'views/directory.html',
@@ -49,24 +53,22 @@ myNinjaApp.directive('randomNinja', [function(){
 
 myNinjaApp.controller('NinjaController', ['$scope', '$http', function($scope, $http){
 
-$scope.removeNinja = function(ninja){
-
-  var removedNinja = $scope.ninjas.indexOf(ninja);
-    $scope.ninjas.splice(removedNinja, 1);
-}
-
-$scope.addNinja = function(){
+$scope.addDev = function(){
 
   $scope.ninjas.push({
     name: $scope.newninja.name,
     experience:$scope.newninja.experience,
     rate: parseInt($scope.newninja.rate),
-    available: true
+    available: true,
+    mail: $scope.newninja.mail,
+    link: $scope.newninja.link
   });
 
-  $scope.newninja.name = ""
-  $scope.newninja.experience = ""
-  $scope.newninja.rate = ""
+  $scope.newninja.name = "";
+  $scope.newninja.experience = "";
+  $scope.newninja.rate = "";
+    $scope.newninja.mail = "";
+      $scope.newninja.link = "";
 
 };
 

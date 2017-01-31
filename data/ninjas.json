@@ -1,8 +1,9 @@
 [{
 	"name": "Tom",
 	"experience": 4,
-	"rate": 50,
+	"rate": 30,
 	"available": true,
+	"mail": "xxx@gmail.com",
 	"link": "http://github.com"
 
 }, {
@@ -10,21 +11,24 @@
 	"experience": 5,
 	"rate": 40,
 	"available": true,
+	"mail": "yyy@gmail.com",
 	"link": "http://github.com"
 
 
 }, {
 	"name": "Linda",
 	"experience": 9,
-	"rate": 10,
+	"rate": 60,
 	"available": true,
+	"mail": "xxx@gmail.com",
 	"link": "http://github.com"
 
 }, {
 	"name": "Mary",
 	"experience": 8,
-	"rate": 1000,
+	"rate": 50,
 	"available": true,
+	"mail": "xxx@gmail.com",
 	"link": "http://github.com"
 
 }]
