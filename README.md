@@ -7,4 +7,6 @@ An AngularJS application to display a list of freelance developers with CRUD fun
 ## Technologies Used
 
 1. AngularJS
-2. Bootstrap
+2. HTML, CSS
+3. Bootstrap
+
